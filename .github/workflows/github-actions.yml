@@ -1,0 +1,11 @@
+name: GitHub Actions Demo
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: first_ci/cd
+        run: echo 'Первый pipeline'
